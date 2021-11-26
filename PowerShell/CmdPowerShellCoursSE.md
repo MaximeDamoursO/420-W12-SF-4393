@@ -1,4 +1,4 @@
-# **Commande PowerShell du Cours 10 SE**
+# **Commande PowerShell du Cours SE**
 
 <mark>**Date : 16 mars 2021**</mark>
 
