@@ -114,17 +114,6 @@ remove-item env:\test
 Get-item Env:\USERNAME
 Set-location c:\
 Get-item Env:\USERNAME (adresse absolue)
-
-Clear ou Clear_host
-
-Get-psprovider
-Get-PSDrive
-New-PSDrive SE filesystem 'D:\OneDrive - Cégep de Sainte-Foy\Cours\420-W12-SF-4392\'
-cd SE:
-Dir or get-childitem
-Cd c:	
-remove-psdrive test
-
 ```
 
 Diapo 14
@@ -146,6 +135,20 @@ Get-Service | ForEach-Object { if ($_.Status -eq "Stopped"){"Service arrêté : 
 
 Get-Help about_if
 Get-Service | ForEach-Object { if ($_.Status -eq "Stopped"){"Service arrêté :  " + $_.Name} else {"Service en marche :  " + $_.Name} } > d:\EtatDesServices.txt
+```
+Diapo 16 Personnalisez la sortie
+
+```powershell
+Clear ou Clear_host
+Get-Command Get-Command | Out-Printer -Name 'Microsoft Office Document Image Writer’
+Get-Process | Out-File -FilePath C:\temp\processlist.txt -Encoding ASCII
+# vous pouvez utiliser le paramètre Width pour spécifier une largeur de ligne.
+Get-Command | Out-File -FilePath c:\temp\output.txt -Width 2147483647
+
+Get-Process | Out-File -FilePath C:\temp\processlist.txt
+Get-Command  |Out-Null
+
+
 ```
 
 Diapo 18 Get-Member
