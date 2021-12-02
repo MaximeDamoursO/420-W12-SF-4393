@@ -12,38 +12,37 @@ pwsh –WorkingDirectory C:\Windows
 Pwsh /?
 ```
 
-**Diapo 7**
+**Diapo 4**
 
 ```powershell
 # Télécharger l’aide 
-Update-Help (attention d’être administrateur)
-Update-Help -UICulture en-us (l’aide française provoque un erreur)
-Get-Help Get-date –Online
-Get-Help Get-date -Example
+Get-Help Get-Date
+Get-Help Get-Date –Online
+Get-Help Get-Date -Example
 Get-Help about_if
 ```
 
-**Diapo 8**
+**Diapo 5**
 
 ```powershell
 Get-Date; Get-Item c:\Windows
 ```
 
-Diapo 10
+Diapo 7
 
 ```powershell
 Get-Process
 Get-Process | out-file  c:\ps\process.txt     
 Get-Process | Select-Object name
-Get-process | Select-Object name ?     (pour avoir plus d’une propriété.
+
 Get-process | Select-Obect name | out-file  c:\ps\process.txt
 clear-host
 Get-Command 
 Get-Command | out-host     (Pas nécessaire sauf si on veut des paramètre de la commande).
 Get-Command | out-host -Paging
 ```
-
-Diapo 12
+**Deuxième cours Lundi le 6 décembre
+Diapo 13
 
 ```powershell
 Clear ou Clear-Host
