@@ -19,7 +19,7 @@ Pwsh /?
 **Diapo 4**
 
 ```powershell
-# Télécharger l’aide 
+
 Get-Help Get-Date
 Get-Help Get-Date –Online
 Get-Help Get-Date -Example
@@ -32,7 +32,7 @@ Get-Help about_if
 Get-Date; Get-Item c:\Windows
 ```
 
-Diapo 7
+Diapo 7, utilisation du pipeline
 
 ```powershell
 Get-Process
@@ -52,8 +52,12 @@ Exemple  de cmdlet à maitriser!
 help *process*
 Get-Help processes 
 Get-Command -Name *service*
-Get-Service | Get-Member | Out-GridView
-![image](https://user-images.githubusercontent.com/78882425/144509069-0cb23ab1-7b3d-4357-ac19-2d945c73a6f5.png)
+
+#One-liners (Utilisation d'une seule commande sur une ligne)
+Get-Service |
+  Where-Object CanPauseAndContinue -eq $true |
+    Select-Object -Property *
+
 
 ```
 ## Deuxième cours Lundi le 6 décembre
