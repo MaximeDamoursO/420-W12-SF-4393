@@ -61,7 +61,9 @@ Get-Service |
 # Analysez la réponse. Vérifiez le propriété CanPauseAndContinue.
 # A quoi sert le Select-Object -Property *
 ```
-## Deuxième cours Lundi le 6 décembre
+## Deuxième cours 
+
+Lundi le 6 décembre
 
 Diapo 11
 Travailler avec les fichies et les dossiers
