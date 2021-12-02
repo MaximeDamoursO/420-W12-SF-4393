@@ -15,6 +15,7 @@ pwsh –WorkingDirectory C:\Windows
 Pwsh /?
 ```
 **Pour les prochaine diapo, tapez ces commandes dans PowerShell**
+
 **Diapo 4**
 
 ```powershell
