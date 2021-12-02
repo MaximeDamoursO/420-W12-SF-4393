@@ -141,7 +141,7 @@ Get-Command  |Out-Null
 
 ```
 
-Diapo 18 Get-Member
+Diapo 17 Get-Member
 
 ```powershell
 Get-ChildItem | Get-Member -MemberType Method 
@@ -152,8 +152,7 @@ Get-ChildItem | Get-Member -MemberType Properties | Measure-Object
 (Get-ChildItem C:\Users\).CreationTime.ToShortDateString() (propriété et méthode) 
 Get-Item -Path D:\etatService.txt
 ```
-
-Diapo 19
+Suite
 
 ```powershell
 Get-ChildItem | Get-Member 
@@ -165,16 +164,4 @@ Get-Process | Get-Member -MemberType Properties
 Get-Process | Get-Member -MemberType Method
 ```
 
-Diapo 20
 
-```powershell
-# Créer un fichier avec valeur :
-New-Item -Path D:\ -Name test.txt -value "PowerShell"
-
-# Récupérer une propriété :
-
-(Get-ChildItem C:\Users\).CreationTime
-(Get-ChildItem C:\Users\).CreationTime.ToShortDateString() (propriété et méthode) 
-Get-Item -Path D:\etatService.txt
-(Get-Item -Path D:\etatService.txt).Length
-```
