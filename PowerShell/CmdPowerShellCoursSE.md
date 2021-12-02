@@ -32,13 +32,13 @@ Diapo 7
 
 ```powershell
 Get-Process
-Get-Process | out-file  c:\ps\process.txt     
-Get-Process | Select-Object name
+Get-Process | out-file  c:\ps\process.txt #Envoyer le résultat dans un fichier texte.
+Get-Process | Select-Object name #Récupérer seulement le nom des processes.
 
 Get-process | Select-Obect name | out-file  c:\ps\process.txt
 clear-host
 Get-Command 
-Get-Command | out-host  # (C'est la sortie par défaut. Donc pas nécessaire sauf si on veut des paramètre de la commande).
+Get-Command | out-host  # (C'est la sortie par défaut. Donc pas nécessaire sauf si on veut des paramètres de la commande comme ce qui suit :).
 Get-Command | out-host -Paging
 ```
 Diapo 10
