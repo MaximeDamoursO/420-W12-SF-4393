@@ -38,8 +38,19 @@ Get-Process | Select-Object name
 Get-process | Select-Obect name | out-file  c:\ps\process.txt
 clear-host
 Get-Command 
-Get-Command | out-host     (Pas nécessaire sauf si on veut des paramètre de la commande).
+Get-Command | out-host  # (C'est la sortie par défaut. Donc pas nécessaire sauf si on veut des paramètre de la commande).
 Get-Command | out-host -Paging
+```
+Diapo 10
+Exemple  de cmdlet à maitriser!
+
+```powershell
+help *process*
+Get-Help processes 
+Get-Command -Name *service*
+Get-Service | Get-Member | Out-GridView
+![image](https://user-images.githubusercontent.com/78882425/144509069-0cb23ab1-7b3d-4357-ac19-2d945c73a6f5.png)
+
 ```
 ## Deuxième cours Lundi le 6 décembre
 Diapo 13
