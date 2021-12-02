@@ -61,23 +61,13 @@ Get-Service |
 # Analysez la réponse. Vérifiez le propriété CanPauseAndContinue.
 # A quoi sert le Select-Object -Property *
 ```
-help *process*
-Get-Help processes 
-Get-Command -Name *service*
-
-#One-liners (Utilisation d'une seule commande sur une ligne)
-Get-Service |
-  Where-Object CanPauseAndContinue -eq $true |
-    Select-Object -Property *
-
-
 ## Deuxième cours Lundi le 6 décembre
 
 Diapo 11
 Travailler avec les fichies et les dossiers
 
 ```powershell
-
+# Attention : utilisez une adresse valide sur votre système.
 New-Item -Path D:\ -Name test.txt -value "PowerShell"
 
 Récupérer une propriété :
