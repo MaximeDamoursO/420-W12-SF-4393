@@ -2,7 +2,7 @@
 
 <mark>**Date : 16 mars 2021**</mark>
 
-**Diapo 6**
+**Tapez ces commandes dans la barre de recherche Windows**
 
 ```powershell
 Pwsh –command Get-Date
