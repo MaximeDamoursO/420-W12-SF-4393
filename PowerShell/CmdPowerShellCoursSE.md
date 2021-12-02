@@ -1,6 +1,8 @@
 # **Commande PowerShell du Cours SE**
 
 <mark>**Date : 16 mars 2021**</mark>
+<mark>**Update : 2 décembre 2021**</mark>
+
 
 **Tapez ces commandes dans la barre de recherche Windows**
 
@@ -11,7 +13,7 @@ pwsh – version
 pwsh –WorkingDirectory C:\Windows
 Pwsh /?
 ```
-
+**Pour les prochaine diapo, tapez ces commandes dans PowerShell**
 **Diapo 4**
 
 ```powershell
