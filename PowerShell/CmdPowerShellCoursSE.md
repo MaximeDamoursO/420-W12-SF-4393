@@ -41,7 +41,7 @@ Get-Command
 Get-Command | out-host     (Pas nécessaire sauf si on veut des paramètre de la commande).
 Get-Command | out-host -Paging
 ```
-**Deuxième cours Lundi le 6 décembre
+## Deuxième cours Lundi le 6 décembre
 Diapo 13
 
 ```powershell
