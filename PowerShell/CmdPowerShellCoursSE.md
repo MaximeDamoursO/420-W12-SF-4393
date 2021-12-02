@@ -100,6 +100,31 @@ Set-Location D:
 Get-Item {tabulation} affiche les fichiers et dossiers
 New-item –itemtype –Name test.txt
 Get-item test.txt
+
+# == Ouvrir regedit et vérifier si ça fonctionne =====
+ Set-Location HKCU:
+New-item –name test
+Remove-item hkcu:\test
+
+-- Variable d’environnement---
+Set-location env:
+Dir (alias)
+ new-item -Name test -value valeurTest
+remove-item env:\test
+Get-item Env:\USERNAME
+Set-location c:\
+Get-item Env:\USERNAME (adresse absolue)
+
+Clear ou Clear_host
+
+Get-psprovider
+Get-PSDrive
+New-PSDrive SE filesystem 'D:\OneDrive - Cégep de Sainte-Foy\Cours\420-W12-SF-4392\'
+cd SE:
+Dir or get-childitem
+Cd c:	
+remove-psdrive test
+
 ```
 
 Diapo 14
