@@ -58,7 +58,8 @@ Get-Service |
   Where-Object CanPauseAndContinue -eq $true |
     Select-Object -Property *
 
-
+# Analysez la réponse. Vérifiez le propriété CanPauseAndContinue.
+# A quoi sert le Select-Object -Property *
 ```
 ## Deuxième cours Lundi le 6 décembre
 Diapo 13
