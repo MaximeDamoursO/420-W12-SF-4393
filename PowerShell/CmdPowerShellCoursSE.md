@@ -79,7 +79,6 @@ Get-Item -Path D:\etatService.txt
 
 ```
 
-
 Diapo 13
 
 ```powershell
@@ -91,12 +90,12 @@ Get-Item {tabulation} affiche les fichiers et dossiers
 New-item –itemtype –Name test.txt
 Get-item test.txt
 
-# == Ouvrir regedit et vérifier si ça fonctionne =====
+# Ouvrir regedit et vérifier si ça fonctionne 
  Set-Location HKCU:
 New-item –name test
 Remove-item hkcu:\test
 
--- Variable d’environnement---
+# Variable d’environnement 
 Set-location env:
 Dir (alias)
  new-item -Name test -value valeurTest
