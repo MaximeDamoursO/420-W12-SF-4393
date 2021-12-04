@@ -61,9 +61,7 @@ Get-Service |
 # Analysez la réponse. Vérifiez le propriété CanPauseAndContinue.
 # A quoi sert le Select-Object -Property *
 ```
-## Deuxième cours 
 
-Lundi le 6 décembre
 
 Diapo 11
 Travailler avec les fichies et les dossiers
@@ -139,31 +137,3 @@ Get-Command | Out-File -FilePath c:\temp\output.txt -Width 2147483647
 
 Get-Process | Out-File -FilePath C:\temp\processlist.txt
 Get-Command  |Out-Null
-
-
-```
-
-Diapo 17 Get-Member
-
-```powershell
-Get-ChildItem | Get-Member -MemberType Method 
-Get-ChildItem | Get-Member -MemberType Method  | Measure-Object
-Get-ChildItem | Get-Member -MemberType Properties | Measure-Object
-# Récupérer une propriété :
-(Get-ChildItem C:\Users\).CreationTime
-(Get-ChildItem C:\Users\).CreationTime.ToShortDateString() (propriété et méthode) 
-Get-Item -Path D:\etatService.txt
-```
-Suite
-
-```powershell
-Get-ChildItem | Get-Member 
-Get-ChildItem | Get-Member | Measure-Object
-
-Get-Process | Get-Member -MemberType Method
-Get-Process | Get-Member | Out-Host -Paging
-Get-Process | Get-Member -MemberType Properties
-Get-Process | Get-Member -MemberType Method
-```
-
-
